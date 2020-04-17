@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>demo</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #eee;
+				min-height: 100vh;
+			}
+			.title {
+				margin: 0;
+				padding: 20px;
+				font-size: 36px;
+				text-align: center;
+			}
+			.nav {
+				min-height: 80vh;
+				width: 180px;
+				background: #888888;
+				border-radius: 0 0 10px 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: stretch;
+				transition: 0.4s;
+				position: relative;
+				left: -180px;
+			}
+			.nav::before {
+				content: '目录';
+				width: 30px;
+				height: 100px;
+				border-radius: 0 8px 8px 0;
+				background: #888888;
+				position: absolute;
+				top: 0px;
+				right: -30px;
+				font-family: '宋体';
+				font-size: 22px;
+				text-align: center;
+				line-height: 50px;
+				color: #82ccdd;
+			}
+			.nav:hover {
+				left: 0;
+			}
+			.btn {
+				height: 40px;
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.btn a {
+				color: #82ccdd;
+				text-decoration: none;
+				font-size: 16px;
+				transition: 0.4s;
+				font-family: '宋体';
+			}
+			.btn a:hover {
+				font-size: 20px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="btn"><a href="./src/Login.html">登录页</a></div>
+			<div class="btn"><a href="./src/Loading1.html">加载效果</a></div>
+			<div class="btn"><a href="./src/LayeredImage.html">分层图片</a></div>
+			<div class="btn"><a href="./src/SearchBox.html">搜索框</a></div>
+			<div class="btn"><a href="./src/SocialMediaButtons.html">社交按钮</a></div>
+			<div class="btn"><a href="./src/FloatPhoto.html">图片悬浮效果</a></div>
+			<div class="btn"><a href="./src/FlexLayout.html">自适应布局导航</a></div>
+			<div class="btn"><a href="./src/FlexAlbum.html">自适相册</a></div>
+			<div class="btn"><a href="./src/FlexCard.html">自适应卡片UI设计</a></div>
+			<div class="btn"><a href="./src/GradientBorderEffects.html">荧光边框</a></div>
+			<div class="btn"><a href="./src/Login1.html">登录页1</a></div>
+			<div class="btn"><a href="./src/Testimonia.html">滑动评论列表</a></div>
+			<div class="btn"><a href="./src/Login2.html">登录页2</a></div>
+		</div>
+	</body>
+</html>
